@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cse.minorproject.guidepath" >
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SingleItemView" />
+        <activity
+            android:name=".BusInfo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MetroMapActivity" />
+        <activity
+            android:name=".HelpActivity"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".About" />
+        <activity
+            android:name=".NearestStop"
+            android:label="@string/title_activity_nearest_stop"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cse.minorproject.guidepath.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ISBTInfo"
+            android:label="@string/title_activity_isbtinfo"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".FareActivity"
+            android:label="@string/title_activity_fare"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cse.minorproject.guidepath.MainActivity" />
+        </activity>
+        <activity
+            android:name=".StopACtivity"
+            android:label="@string/title_activity_stop_activity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cse.minorproject.guidepath.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>
